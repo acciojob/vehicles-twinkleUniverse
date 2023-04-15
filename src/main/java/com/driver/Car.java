@@ -1,21 +1,17 @@
 package com.driver;
 
 public class Car extends Vehicle {
-
     private int wheels;
     private String type;
     private int doors;
     private int gears;
     private boolean isManual;
-
     private int currentGear;
-
     private int seats;
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         super(name);
         //Hint: Car extends Vehicle
-       // this.name=name;
         this.currentGear=1;
         this.wheels=wheels;
         this.doors=doors;
@@ -26,7 +22,7 @@ public class Car extends Vehicle {
     }
 
     public void changeGear(int newGear){
-        currentGear=newGear;
+        this.currentGear=newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
